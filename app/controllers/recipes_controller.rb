@@ -3,9 +3,10 @@ class RecipesController < ApplicationController
   def index
     @recipes = Recipe.all
   end
-  
+
   def new
     @recipe = Recipe.new
+    @ingredients = Ingredient.all
   end
 
   def create
