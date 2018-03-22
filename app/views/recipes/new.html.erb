@@ -2,9 +2,15 @@
 <%= f.label :name %>
 <%= f.text_field :name %>
 
-<% @ingredients.each do |ingredient| %>
-  <%= ingredient.name %>
-<% end %>
+<p>
+  <% @ingredients.each do |ingredient| %>
+    <%= ingredient.name %>
+  <% end %>
+</p>
+
+
+
+
 
 <%= f.submit "Create Recipe" %>
 <% end %>
